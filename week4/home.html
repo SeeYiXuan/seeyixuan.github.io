@@ -93,7 +93,7 @@
             align-items: center;
         }
 
-        div.services {
+        div.servicestext {
             background-color: #b9ff66;
             font-size: 15px;
             border-radius: 7px;
@@ -117,6 +117,7 @@
 
         div.content1 {
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
             gap: 10px;
         }
@@ -125,38 +126,41 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            justify-content: space-evenly;
         }
 
         div.content3 {
             display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-evenly;
         }
 
         div.servicesinfo_grey {
             display: flex;
-            background-color: #e0e0e0;
-            color: black;
-            border-radius: 10px;
+            background-color: rgb(241, 239, 239);
+            border-radius: 40px;
             border: black solid 1px;
-            padding: 20px;
+            padding: 40px 60px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         div.servicesinfo_green {
             display: flex;
             background-color: #b9ff66;
-            color: black;
-            border-radius: 10px;
+            border-radius: 40px;
             border: black solid 1px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 40px 60px;
         }
 
         div.servicesinfo_black {
             display: flex;
-            background-color: #000;
             color: white;
-            border-radius: 10px;
-            padding: 20px;
+            background-color: #000;
+            border-radius: 40px;
+            padding: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
         }
 
         div.makethingshappen {
@@ -165,6 +169,13 @@
             justify-content: center;
             gap: 20px;
             margin-top: 50px;
+        }
+
+        button.getproposal {
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+            padding: 13px 30px;
         }
 
         @media screen and (max-width:1110px) {
@@ -218,7 +229,7 @@
     </div>
 
     <div class="servicesbar">
-        <div class="services">
+        <div class="servicestext">
             <h2>Services</h2>
         </div>
         <p class="service_content"> At our digital marketing agency, we offer a range of services to help businesses
@@ -233,14 +244,14 @@
             <div class="servicesinfo_grey">
                 <h3>Search Engine<br>Optimization</h3>
                 <div><img src="images/Icon green arrow.png" alt="green arrow"></div>
-                <p>Service Info</p>
-                <div><img src="images/search engine.png" alt="search engine optimization"></div>
+                <p>Learn more</p>
+                <div><img src="images/search engine.png" alt="search engine optimization" width="100%"></div>
             </div>
             <div class="servicesinfo_green">
                 <h3>Pay-Per-Click<br>Advertising</h3>
                 <div><img src="images/Icon green arrow.png" alt="green arrow"></div>
-                <p>Service Info</p>
-                <div><img src="images/pay per click.png" alt="pay per click"></div>
+                <p>Learn more</p>
+                <div><img src="images/pay per click.png" alt="pay per click" width="100%"></div>
             </div>
         </div>
 
@@ -248,15 +259,15 @@
             <div class="servicesinfo_black">
                 <h3>Social Media<br>Marketing</h3>
                 <div><img src="images/Icon black arrow.png" alt="black arrow"></div>
-                <p>Service Info</p>
-                <div><img src="images/social media marketing.png" alt="social media marketing"></div>
+                <p>Learn more</p>
+                <div><img src="images/social media marketing.png" alt="social media marketing" width="100%"></div>
 
             </div>
             <div class="servicesinfo_grey">
                 <h3>Email<br>Marketing</h3>
                 <div><img src="images/Icon green arrow.png" alt="green arrow"></div>
-                <p>Service Info</p>
-                <div><img src="images/email marketing.png" alt="email marketing"></div>
+                <p>Learn more</p>
+                <div><img src="images/email marketing.png" alt="email marketing" width="100%"></div>
 
             </div>
         </div>
@@ -266,13 +277,13 @@
             <div class="servicesinfo_green">
                 <h3>Content<br>Creation</h3>
                 <div><img src="images/Icon green arrow.png" alt="green arrow"></div>
-                <p>Service Info</p>
+                <p>Learn more</p>
                 <div><img src="images/content creation.png" alt="content creation"></div>
             </div>
             <div class="servicesinfo_black">
                 <h3>Analytics and<br>Tracking</h3>
                 <div><img src="images/Icon black arrow.png" alt="black arrow"></div>
-                <p>Service Info</p>
+                <p>Learn more</p>
                 <div><img src="images/analytics and tracking.png" alt="analytics and tracking"></div>
             </div>
         </div>
@@ -280,10 +291,10 @@
 
     <div class="makethingshappen">
         <h3>Let's make things happen</h3>
-        <p></p> us today to learn more about how our digital marketing services can help your business grow and succeed
-        online.</p>
+        <p> us today to learn more about how our digital marketing services can help your business grow and succeed
+            online.</p>
         <div><button class="getproposal">Get your free proposal</button></div>
-
-        </body>
+    </div>
+</body>
 
 </html>

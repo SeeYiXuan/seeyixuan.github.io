@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Oxygen', sans-serif;
             margin: 4px 90px;
         }
 
@@ -26,7 +28,7 @@
 
         div.menu_container {
             display: flex;
-            align-items: center;
+            justify-content: center;
             gap: 30px;
             font-size: 15px;
         }
@@ -34,17 +36,49 @@
         div.phoneicon {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
         }
+
 
         div.buttoncontact {
             color: white;
             background-color: #ef7244;
             font-weight: bold;
             border-radius: 10px;
-            border: none;
-            padding: 13px 30px;
+            padding: 13px 18px;
             font-size: 12px;
+        }
+
+        div.services {
+            color: #ef7244;
+        }
+
+        div.hamburgermenu {
+            display: none;
+        }
+
+        @media screen and (max-width: 1060px) {
+            div.menu_container {
+                display: none;
+            }
+
+            div.buttoncontact {
+                display: none;
+            }
+
+            div.hamburgermenu {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 570px) {
+            h6 {
+                display: none;
+            }
+
+            div.phoneimg {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -52,7 +86,7 @@
 <body>
     <div class="Header">
         <div class="logo">
-            <img src="images/elementra logo.png" alt="Elementra" width="40%">
+            <img src="images/elementra logo.png" alt="Elementra" width="190px">
         </div>
         <div class="menu_container">
             <div class="home">Home</div>
@@ -62,10 +96,13 @@
             <div class="contact">Contact</div>
         </div>
         <div class="phoneicon">
-            <img src="images/phone_icon_transparent.png" alt="phoneicon" width="30px">
+            <div class="phoneimg"><img src="images/phone_icon_transparent.png" alt="phoneicon" width="30px"></div>
             <h6>555-123-4567</h6>
             <div class="buttoncontact">Contact</div>
+            <div class="hamburgermenu"><img src="images/menu.png" alt="hamburger menu" width="30px"></div>
         </div>
+
+
     </div>
 </body>
 

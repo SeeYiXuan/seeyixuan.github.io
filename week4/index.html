@@ -11,14 +11,15 @@
         body {
             font-family: "Nunito", sans-serif;
             margin: 0px;
+            color: #355872;
             background-color: antiquewhite;
         }
 
         div.header {
             display: flex;
-            background-color: rgb(66, 178, 66);
+            background-color: #7AAACE;
             justify-content: space-between;
-            padding: 20px 10px;
+            padding: 5px 15px;
             align-items: center;
         }
 
@@ -47,14 +48,54 @@
         div.weekbox {
             display: flex;
             align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        div.weeksmallbox {
+            background-color: #9cd6ff55;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 70px;
+            border-radius: 20px;
         }
 
         div.weekexe {
-            background-color: rgba(255, 255, 255, 0.23);
             display: flex;
             align-items: center;
             gap: 10px;
-            margin: auto;
+            border-bottom: 2px solid;
+            padding: 0px 90px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #355872;
+        }
+
+        div.weekbigbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.week5exe {
+            background-color: #9cd6ff55;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 10px 110px;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+
+        div.weekexe2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid;
+            padding: 0px 500px;
         }
     </style>
 </head>
@@ -82,30 +123,51 @@
     </div>
 
     <div class="weekbox">
-        <div class="weekexe">
-            <div class="week2"></div>
-            <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-            <h4>Week 2</h4>
-            <p></p>
-            <p><a href=""></a></p>
-            <p><a href=""></a></p>
-        </div>
-        <div class="weekexe">
-            <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-            <h4>Week 3</h4>
-            <p><a href=""></a></p>
-            <p><a href=""></a></p>
-        </div>
-        <div class="weekexe">
-            <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-            <h4>Week 4</h4>
-            <p><a href=""></a></p>
-            <p><a href=""></a></p>
+        <div class="weeksmallbox">
+            <div class="weekexe">
+                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                <h4>Week 2</h4>
+            </div>
+            <div class="exercise">
+                <p><a href="http://127.0.0.1:5500/week2/button.html" target="blank">Exercise1</a></p>
+                <p><a href="http://127.0.0.1:5500/week2/self-intro.html" target="blank">Exercise2</a></p>
+            </div>
         </div>
 
+        <div class="weeksmallbox">
+            <div class="weekexe">
+                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                <h4>Week 3</h4>
+            </div>
+            <div class="exercise">
+                <p><a href="http://127.0.0.1:5500/week3/flexbox1.html" target="blank">Exercise1</a></p>
+                <p><a href="http://127.0.0.1:5500/week3/flexbox2.html" target="blank">Exercise2</a></p>
+            </div>
+        </div>
 
+        <div class="weeksmallbox">
+            <div class="weekexe">
+                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                <h4>Week 4</h4>
+            </div>
+            <div class="exercise">
+                <p><a href="http://127.0.0.1:5500/week4/menu.html" target="blank">Exercise1</a></p>
+                <p><a href="http://127.0.0.1:5500/week4/home.html" target="blank">Exercise2</a></p>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="weekbigbox">
+        <div class="week5exe">
+            <div class="weekexe2">
+                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                <h4>Week 5</h4>
+            </div>
+            <div class="exercise">
+                <p><a href="" target="blank">Exercise1</a></p>
+                <p><a href="" target="blank">Exerciuse2</a></p>
+            </div>
+        </div>
     </div>
 
 

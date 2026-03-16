@@ -102,7 +102,7 @@
             align-items: center;
         }
 
-        h2 {
+        h2.services {
             background-color: #b9ff66;
             border-radius: 7px;
             color: #000;
@@ -233,6 +233,10 @@
         }
 
         @media screen and (max-width:1110px) {
+            body {
+                padding: 20px;
+            }
+
             div.menu_container {
                 display: none;
             }
@@ -240,6 +244,41 @@
             .hamburgermenu {
                 display: block;
             }
+        }
+
+        @media screen and (max-width:600px) {
+            body {
+                margin: auto;
+            }
+
+            div.title {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            div.logo_bar {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+
+            }
+
+            div.servicesbar {
+                flex-direction: column;
+            }
+
+            div.servicesinfo_bar {
+                margin: auto;
+                width: 60%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            div.engineimage {
+                width: 35%;
+            }
+
+
         }
     </style>
 </head>
@@ -284,7 +323,7 @@
 
     <div class="servicesbar">
         <div class="servicestext">
-            <h2>Services</h2>
+            <h2 class="services">Services</h2>
         </div>
         <p class="services_content"> At our digital marketing agency, we offer a range of services to<br>help businesses
             grow and succeed online.

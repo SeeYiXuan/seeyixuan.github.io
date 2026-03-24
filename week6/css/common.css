@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 20px 90px;
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div.menu_container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    font-size: 15px;
+}
+
+.hamburgermenu {
+    display: none;
+}
+
+div.buttonrequest {
+    border-radius: 10px;
+    border: black solid 1px;
+    padding: 13px 30px;
+    font-size: 12px;
+}

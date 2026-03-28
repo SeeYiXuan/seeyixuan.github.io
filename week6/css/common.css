@@ -1,7 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#container {
+    max-width: 1280px;
+    margin: auto;
 }
 
 body {
@@ -39,4 +38,142 @@ div.buttonrequest {
     border: black solid 1px;
     padding: 13px 30px;
     font-size: 12px;
+}
+
+div.footer {
+    background: black;
+    border-radius: 35px 35px 0px 0px;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+div.footer_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+
+div.logo_white {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h2.positivuswhite {
+    color: white;
+}
+
+div.mcwhite {
+    color: white;
+    text-decoration: underline;
+}
+
+div.footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+div.content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 22%;
+    margin: 10px;
+}
+
+div.contact {
+    color: #191A23;
+    background-color: #b9ff66;
+    border-radius: 5px;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+
+div.formbox {
+    background-color: #292A32;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 15px;
+    width: 55%;
+    padding: 30px;
+}
+
+
+div.email {
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 16px 40px;
+    text-align: left;
+    width: 60%;
+}
+
+div.subscribe {
+    background: #b9ff66;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 16px 20px;
+    text-align: center;
+    width: 40%;
+}
+
+div.reserved {
+    color: white;
+    margin-top: 40px;
+    border-top: 1px solid white;
+    padding: 25px 0px;
+    display: flex;
+}
+
+div.privacy {
+    color: white;
+    text-decoration: underline;
+    padding: 0px 25px;
+}
+
+@media screen and (max-width:1150px) {
+
+    div.menu_container {
+        display: none;
+    }
+
+    .hamburgermenu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    div.footer {
+        padding: 30px 20px;
+        border-radius: 0;
+    }
+
+    div.footer_content {
+        text-align: center;
+        align-items: center;
+    }
+
+    div.content {
+        width: 100%;
+        align-items: center;
+    }
+
+
+    div.formbox {
+        flex-wrap: wrap;
+    }
+
+    div.reserved {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
 }

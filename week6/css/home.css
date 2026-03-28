@@ -198,7 +198,7 @@ button.buttonproposal {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-        width: calc (33.33%-);
+        width: calc (33.33%-12);
     }
 
     div.servicesinfo_bar {

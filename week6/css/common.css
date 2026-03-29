@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
-    padding: 20px 90px;
+    padding: 20px 90px 0px 90px;
 }
 
 div.header {
@@ -204,7 +204,7 @@ div.privacy {
 @media screen and (max-width:700px) {
 
     div.footer {
-        margin: 50px -90px;
+        margin: 50px -90px 0px -90px;
         border-radius: 0px;
     }
 

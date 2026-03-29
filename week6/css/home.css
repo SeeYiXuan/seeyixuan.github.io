@@ -42,14 +42,16 @@ div.speakerimg {
 
 div.logo_bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    padding: 20px;
 }
 
 div.logoname {
     filter: grayscale(1);
-    width: calc(16.66% - 100px);
+    width: calc(16.66% - 16.66px);
 }
 
 
@@ -192,7 +194,7 @@ button.buttonproposal {
     }
 
     div.logoname {
-        width: calc(33.33%-12px);
+        width: calc(33.33% - 13.33px);
     }
 
     div.servicesinfo_bar {
@@ -254,8 +256,8 @@ button.buttonproposal {
         padding: 0px 15px;
     }
 
-    div.logo_bar {
-        width: calc(50%-10px);
+    div.logoname {
+        width: calc(50% - 10px);
     }
 
 }

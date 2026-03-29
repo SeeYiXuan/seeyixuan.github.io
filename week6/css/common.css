@@ -90,8 +90,8 @@ div.content {
 div.contact {
     color: #191A23;
     background-color: #b9ff66;
-    border-radius: 5px;
     padding: 0px 10px;
+    border-radius: 5px;
     font-weight: bold;
 }
 
@@ -133,6 +133,10 @@ div.reserved {
     display: flex;
 }
 
+div.bottomicon {
+    display: none;
+}
+
 div.privacy {
     color: white;
     text-decoration: underline;
@@ -148,17 +152,32 @@ div.privacy {
     .hamburgermenu {
         display: block;
     }
+
+    div.mcwhite {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width:700px) {
-    div.footer {
-        padding: 30px 20px;
-        border-radius: 0;
+@media screen and (max-width:900px) {
+    div.mcwhite {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    div.footer_bar {
+        flex-direction: column;
+        gap: 30px;
     }
 
     div.footer_content {
         text-align: center;
         align-items: center;
+        flex-direction: column;
     }
 
     div.content {
@@ -166,14 +185,54 @@ div.privacy {
         align-items: center;
     }
 
+    div.formbox {
+        width: 100%;
+    }
+
+    div.icon {
+        display: none;
+    }
+
+    div.bottomicon {
+        display: block;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    div.footer {
+        margin: 50px -90px;
+        border-radius: 0px;
+    }
+
 
     div.formbox {
         flex-wrap: wrap;
+        width: 100%;
+    }
+
+    div.email {
+        width: 100%;
+    }
+
+    div.subscribe {
+        width: 100%;
+    }
+
+    div.bottomicon {
+        display: block;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
     }
 
     div.reserved {
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
 
 }

@@ -9,8 +9,14 @@
         @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
         #container {
-            max-width: 1280px;
+            max-width: 1536px;
             margin: auto；
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         body {
@@ -51,9 +57,18 @@
             max-width: 30px;
         }
 
+        div.selfphoto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
         div.weekcontainer {
             display: flex;
-            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
         }
 
         div.weekbox {
@@ -62,15 +77,17 @@
             display: flex;
             flex-direction: column;
             border-radius: 20px;
-            width: 32%;
-            margin: 20px;
+            padding: 20px;
+            gap: 10px;
+            width: calc(33.33% - 13.33px);
+
         }
 
         div.weekexe {
             display: flex;
             align-items: center;
-            gap: 15px;
             border-bottom: 2px solid;
+            gap: 15px;
             padding: 15px 80px;
         }
 
@@ -78,28 +95,17 @@
             font-weight: bold;
         }
 
+        div.exercise {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
         a {
             text-decoration: none;
             color: #355872;
         }
 
-        div.weekbox4 {
-            background-color: #9cd6ff3a;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            border-radius: 20px;
-            width: 100%;
-            margin: 20px;
-        }
-
-        div.weekexe4 {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            border-bottom: 2px solid;
-            padding: 15px 80px;
-        }
 
         div.bottom {
             display: flex;
@@ -111,7 +117,12 @@
         }
 
         @media screen and (max-width:1100px) {
+            div.weekbox {
+                width: calc(50% - 10px);
+            }
+
             div.profile {
+                align-items: center;
                 margin: 40px;
             }
         }
@@ -124,113 +135,119 @@
             }
 
             div.weekbox {
-                width: 80%;
+                width: 100%;
             }
 
-            div.weekbox4 {
-                width: 80%;
-            }
-
-            div.profile {
-                align-items: center;
-                margin: 40px;
-            }
         }
     </style>
 </head>
 
 <body>
-    <div id="container"></div>
+    <div id="container">
 
-    <div class="header">
-        <div class="headerbar">
-            <a href="http://127.0.0.1:5500/index.html"></a><img class="logoimage" src="images/transparent_logo.png"
-                alt="logo" width="100%">
-        </div>
-        <div class="mediaimg">
-            <p>
-                <a href="https://api.whatsapp.com/" target="blank"><img src="images/whats-app.png" alt="whatsapp logo"
-                        width="30px"></a>
-                <a href="https://www.instagram.com/yxuan2323/" target="blank"><img src="images/instagram.png"
-                        alt="instagram logo" width="30px"></a>
-                <a href="https://web.facebook.com/index.php/?_rdc=1&_rdr#" target="blank"><img
-                        src="images/facebook3.png" alt="facebook logo" width="30px"></a>
-            </p>
-        </div>
-    </div>
-
-    <div class="profile">
-        <div class="selfphoto">
-            <img class="profileimage" src="images/profile images2.jpeg" alt="selfphoto" width="100%">
-        </div>
-        <h2>See Yi Xuan</h2>
-        <h3>Web Publishing</h3>
-        <p>Hello! I'm See Yi Xuan, a digital media student, I love listening to music and browsing social media in my
-            free time. Welcome to my personal page!</p>
-    </div>
-
-    <div class="weekcontainer">
-        <div class="weekbox">
-            <div class="weekexe">
-                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-                <div class="week">Week 1</div>
+        <div class="header">
+            <div class="headerbar">
+                <a href="http://127.0.0.1:5500/index.html"></a><img class="logoimage" src="images/transparent_logo.png"
+                    alt="logo" width="100%">
             </div>
-            <div class="exercise">
-                <p><a href="http://seeyixuan.github.io/week1/exe1.html" target="blank">Exercise1</a></p>
-                <p><a href="http://seeyixuan.github.io/week1/exe2.html" target="blank">Exercise2</a></p>
-            </div>
-        </div>
-
-        <div class="weekbox">
-            <div class="weekexe">
-                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-                <div class="week">Week 2</div>
-            </div>
-            <div class="exercise">
-                <p><a href="http://seeyixuan.github.io/week2/button.html" target="blank">Exercise1</a></p>
-                <p><a href="http://seeyixuan.github.io/week2/self-intro.html" target="blank">Exercise2</a></p>
-                <p><a href="http://seeyixuan.github.io/week2/artist.html" target="_blank">Exercise3</a></p>
-            </div>
-        </div>
-
-        <div class="weekbox">
-            <div class="weekexe">
-                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-                <div class="week">Week 3</div>
-            </div>
-            <div class="exercise">
-                <p><a href="http://seeyixuan.github.io/week3/flexbox1.html" target="blank">Exercise1</a></p>
-                <p><a href="http://seeyixuan.github.io/week3/flexbox2.html" target="blank">Exercise2</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="weekcontainer">
-        <div class="weekbox4">
-            <div class="weekexe4">
-                <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
-                <div class="week">Week 4</div>
-            </div>
-            <div class="exercise">
-                <p><a href="http://seeyixuan.github.io/week4/menu.html" target="blank">Exercise1</a></p>
-                <p><a href="http://seeyixuan.github.io/week4/home.html" target="blank">Exercise2</a></p>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="bottom">
-        <div class="mediaicon">
             <div class="mediaimg">
-                <img src="images/whats-app.png" alt="whatsapp" width="30px">
-                <img src="images/instagram.png" alt="instagram" width="30px">
-                <img src="images/facebook3.png" alt="facebook" width="30px">
+                <p>
+                    <a href="https://api.whatsapp.com/" target="blank"><img src="images/whats-app.png"
+                            alt="whatsapp logo" width="30px"></a>
+                    <a href="https://www.instagram.com/yxuan2323/" target="blank"><img src="images/instagram.png"
+                            alt="instagram logo" width="30px"></a>
+                    <a href="https://web.facebook.com/index.php/?_rdc=1&_rdr#" target="blank"><img
+                            src="images/facebook3.png" alt="facebook logo" width="30px"></a>
+                </p>
             </div>
         </div>
-        <div class="bottomword">
-            <p>@ 2024 See Yi Xuan, All rights reserved.</p>
+
+        <div class="profile">
+            <div class="selfphoto">
+                <img class="profileimage" src="images/profile images2.jpeg" alt="selfphoto" width="100%">
+                <h2>See Yi Xuan</h2>
+                <h3>Web Publishing</h3>
+                <p>Hello! I'm See Yi Xuan, a digital media student, I love listening to music and browsing social media
+                    in
+                    my
+                    free time. Welcome to my personal page!</p>
+            </div>
+        </div>
+
+        <div class="weekcontainer">
+            <div class="weekbox">
+                <div class="weekexe">
+                    <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                    <div class="week">Week 1</div>
+                </div>
+                <div class="exercise">
+                    <p><a href="http://seeyixuan.github.io/week1/exe1.html" target="blank">Exercise1</a></p>
+                    <p><a href="http://seeyixuan.github.io/week1/exe2.html" target="blank">Exercise2</a></p>
+                </div>
+            </div>
+
+            <div class="weekbox">
+                <div class="weekexe">
+                    <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                    <div class="week">Week 2</div>
+                </div>
+                <div class="exercise">
+                    <p><a href="http://seeyixuan.github.io/week2/button.html" target="blank">Exercise1</a></p>
+                    <p><a href="http://seeyixuan.github.io/week2/self-intro.html" target="blank">Exercise2</a></p>
+                    <p><a href="http://seeyixuan.github.io/week2/artist.html" target="_blank">Exercise3</a></p>
+                </div>
+            </div>
+
+            <div class="weekbox">
+                <div class="weekexe">
+                    <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                    <div class="week">Week 3</div>
+                </div>
+                <div class="exercise">
+                    <p><a href="http://seeyixuan.github.io/week3/flexbox1.html" target="blank">Exercise1</a></p>
+                    <p><a href="http://seeyixuan.github.io/week3/flexbox2.html" target="blank">Exercise2</a></p>
+                </div>
+            </div>
+
+
+            <div class="weekbox">
+                <div class="weekexe">
+                    <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                    <div class="week">Week 4</div>
+                </div>
+                <div class="exercise">
+                    <p><a href="http://seeyixuan.github.io/week4/menu.html" target="blank">Exercise1</a></p>
+                    <p><a href="http://seeyixuan.github.io/week4/home.html" target="blank">Exercise2</a></p>
+                </div>
+            </div>
+
+            <div class="weekbox">
+                <div class="weekexe">
+                    <img class="calendar" src="images/calendar.png" alt="calendericon" width="100%">
+                    <div class="week">Week 7</div>
+                </div>
+                <div class="exercise">
+                    <p><a href="http://seeyixuan.github.io/week4/menu.html" target="blank">Exercise1</a></p>
+                    <p><a href="http://seeyixuan.github.io/week4/home.html" target="blank">Exercise2</a></p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="bottom">
+            <div class="mediaicon">
+                <div class="mediaimg">
+                    <img src="images/whats-app.png" alt="whatsapp" width="30px">
+                    <img src="images/instagram.png" alt="instagram" width="30px">
+                    <img src="images/facebook3.png" alt="facebook" width="30px">
+                </div>
+            </div>
+            <div class="bottomword">
+                <p>@ 2024 See Yi Xuan, All rights reserved.</p>
+            </div>
         </div>
     </div>
-
 
 </body>
 

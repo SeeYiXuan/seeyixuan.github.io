@@ -174,11 +174,6 @@ button.buttonproposal {
 }
 
 
-@media screen and (max-width:1150px) {
-    body {
-        padding: 20px;
-    }
-}
 
 @media screen and (max-width:850px) {
     div.title {
@@ -218,6 +213,7 @@ button.buttonproposal {
 }
 
 @media screen and (max-width:700px) {
+
     div.speaker {
         display: none;
     }

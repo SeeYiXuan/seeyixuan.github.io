@@ -49,6 +49,19 @@ div.information_text2 {
     color: white;
 }
 
+div.information_box_media {
+    border-radius: 30px;
+    gap: 20px;
+    margin: 30px 0px;
+    display: none;
+}
+
+div.information_text1_media {
+    color: white;
+    background-color: #191A23;
+    padding: 30px;
+    border-radius: 30px;
+}
 
 p.learn_green {
     color: #b9ff66;
@@ -204,6 +217,17 @@ div.buttonteam {
         width: 100%;
     }
 
+
+    div.information_box {
+        display: none;
+    }
+
+    div.information_box_media {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width:700px) {
@@ -211,5 +235,7 @@ div.buttonteam {
         width: calc(100% - 30px);
     }
 
-
+    div.teamsmallbox {
+        justify-content: space-between;
+    }
 }

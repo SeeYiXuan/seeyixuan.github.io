@@ -8,11 +8,83 @@
 
 :root {
     --font-family: 'Nunito', sans-serif;
-    --background-color: #d7d7d7;
+    --background-color: #b3b2b2;
     --color-description: #a4a4a4;
     --border-radius: 15px;
 }
 
 body {
     font-family: var(--font-family);
+}
+
+div.travelbox {
+    display: flex;
+    gap: 50px;
+    margin: 60px;
+    justify-content: center;
+}
+
+div.cardbox {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    max-width: 30%;
+    margin: 0px 50px;
+    position: relative;
+    left: 0px;
+
+}
+
+img.images {
+    border-radius: var(--border-radius);
+}
+
+h3 {
+    padding: 20px 0px;
+}
+
+p {
+    padding: 20px 0px;
+}
+
+
+div.peoplebox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+div.peoplegoing {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0px;
+    align-items: center;
+}
+
+div.absolute {
+    background-color: rgb(215, 215, 215);
+    position: absolute;
+    top: 350px;
+    left: 330px;
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    border-radius: var(--border-radius);
+
+}
+
+img.profile {
+    border-radius: 50%;
+}
+
+div.city {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+span {
+    color: rgb(188, 52, 188);
 }

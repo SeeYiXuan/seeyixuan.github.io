@@ -8,9 +8,11 @@
 
 :root {
     --font-family: 'Nunito', sans-serif;
-    --background-color: #fef2e3;
+    --background-color: #d7d7d7;
     --color-description: #424242;
-    --color-learnmore: #51f471;
+    --color-learnmore: #5bd172;
+    --border-radius: 15px;
+    --font-weight: bold;
 }
 
 body {
@@ -25,4 +27,63 @@ h1 {
 p {
     text-align: center;
     margin: 20px;
+}
+
+div.dog-care {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+}
+
+div.cardbox {
+    width: calc(33.333% - 13.33px);
+}
+
+div.relative {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    position: relative;
+    bottom: 80px;
+    border-radius: var(--border-radius);
+}
+
+div.description {
+    color: var(--color-description);
+    padding: 20px;
+    text-align: center;
+    font-weight: var(--font-weight);
+}
+
+div.readnmore {
+    color: var(--color-learnmore);
+    padding: 20px;
+    font-weight: var(--font-weight);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 830px) {
+    div.dog-care {
+        display: flex;
+    }
+
+    div.cardbox {
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    div.dog-care {
+        display: flex;
+    }
+
+    div.cardbox {
+        width: calc(100% - 20px);
+    }
 }

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-headline: "Trocchi", serif;
+    --font-bodytext: 'Work Sans', sans-serif;
+    --background-color: #1E3120;
+    --button-color-primary: #3D6F42;
+    --button-color-hover: #1E3120;
+    --button-color-secondary: #FFFFFF;
+    --button-border-radius: 30px;
+    --background-text-field: #F8F5F2;
+    --border-radius-text-field: 27px;
+    --border-radius: 5px;
+    --border-color: #A0A0A0;
+}
+
+body {
+    font-family: var(--font-headline);
+}

@@ -9,17 +9,136 @@
 :root {
     --font-headline: "Trocchi", serif;
     --font-base: 'Work Sans', sans-serif;
-    --background-color: #1E3120;
-    --button-color-primary: #3D6F42;
-    --button-color-hover: #1E3120;
-    --button-color-secondary: #FFFFFF;
+    --color-text: black;
+    --color-background: #1E3120;
+    --color-button-primary: #3D6F42;
+    --color-button-hover: #1E3120;
+    --color-button-secondary: #FFFFFF;
+    --color-button-secondary-hover: #3D6F42;
+    --color-button-text: #FFFFFF;
+    --color-button-text-hover: #FFFFFFa3;
+    --color-label: #3D6F42;
+    --color-navbar-menu-text: #0000008c;
+    --color-navbar-menu-text-hover: #000000;
+    --color-navbar-submenu-hover-bg: #3D6F42;
+    --color-navbar-submenu-hover-text: #FFFFFF;
+    --color-searchbar: #1d2f1f0E;
+    --button-text-large: 18px;
+    --button-text-small: 14px;
     --button-border-radius: 30px;
+    --button-hover: #FFFFFFa3;
+    --button-padding-small: 13px 29px;
+    --button-padding-large: 17px 40px;
     --background-text-field: #F8F5F2;
     --border-radius-text-field: 27px;
-    --border-radius: 5px;
+    --border-radius-card: 5px;
     --border-color: #A0A0A0;
+    --image-padding: 20px;
+    --gap: 40px
 }
 
 body {
-    font-family: var(--font-headline);
+    font-family: var(--font-base);
 }
+
+/* Desktop */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headline);
+    font-weight: 400px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.35;
+}
+
+h2 {
+    font-size: 34px;
+    line-height: 1.35;
+}
+
+h3 {
+    line-height: 1.3;
+    font-size: 22px;
+}
+
+h4 {
+    line-height: 1.36;
+    font-size: 20px;
+}
+
+h5 {
+    line-height: 1.4;
+    font-size: 24px;
+}
+
+h6 {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+div.logobox {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 30px;
+    align-items: center;
+    border-bottom: #00000047 1px solid;
+}
+
+div.searchbar input {
+    border: none;
+    background: none;
+}
+
+
+div.searchbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: var(--button-border-radius);
+    background-color: var(--color-searchbar);
+}
+
+div.menu_container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 20px;
+    font-weight: 500;
+}
+
+.button-white {
+    color: var(--color-text);
+    background: var(--color-button-secondary);
+}
+
+.button-white:hover {
+    background: var(--color-button-secondary-hover);
+    color: var(--color-button-text-hover);
+}
+
+.button-green {
+    color: var(--color-button-text);
+    background: var(--color-button-primary);
+}
+
+.button-green:hover {
+    background: var(--color-button-hover);
+    color: var(--color-button-primary);
+}
+
+
+
+
+
+
+@media screen and (min-width: 880px) {}
+
+@media screen and (min-width: 640px) {}

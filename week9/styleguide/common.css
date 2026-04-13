@@ -8,7 +8,7 @@
 
 :root {
     --font-headline: "Trocchi", serif;
-    --font-bodytext: 'Work Sans', sans-serif;
+    --font-base: 'Work Sans', sans-serif;
     --background-color: #1E3120;
     --button-color-primary: #3D6F42;
     --button-color-hover: #1E3120;

@@ -141,6 +141,13 @@ div.top-item {
     justify-content: center;
 }
 
+div.heading {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px
+}
+
 /* Button */
 div.button {
     margin: 30px;
@@ -190,6 +197,8 @@ div.box {
     display: flex;
     gap: 30px;
     border-radius: var(--border-radius-card);
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 
@@ -198,6 +207,7 @@ div.image {
     padding: 20px;
     border-radius: var(--border-radius-card);
     border: 1px solid var(--border-color);
+    width: calc(33.33% - 20px);
 }
 
 div.image:hover {
@@ -292,4 +302,27 @@ div.bottommenu {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+@media (max-width: 880px) {
+    div.box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.image {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 640px) {
+    div.box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    div.image {
+        width: calc(100% - 30px);
+    }
 }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background-color: #ffffff;
+            --border-radius: 20px;
+            --border-color: rgb(192, 192, 192);
+        }
+
+
+        div.form {
+            margin: 20px;
+            align-items: center;
+        }
+
+        div.formbox {
+            background-color: white;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+        }
+
+        div.formcontent {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div class="formbox">
+            <h1>Registration Form-Middle School</h1>
+            <div class="formcontent">
+                <label for="firstname"></label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="First name*">
+
+                <label for="lastname"></label><br>
+                <input type="text" id="lastname" name="lastname" placeholder="Last name*">
+            </div>
+
+            <div class="formcontent">
+                <label for="grade"></label><br>
+                <input type="text" id="grade" name="grade" placeholder="Grade level*">
+
+                <label for="attending"></label><br>
+                <input type="text" id="attending" name="attending" placeholder="School attending*">
+            </div>
+
+            <div class="formcontent">
+                <label for="level"></label><br>
+                <input type="text" id="level" name="level" placeholder="Skill level*">
+
+                <label for="size"></label><br>
+                <input type="text" id="size" name="size" placeholder="T-shirt size*">
+            </div>
+
+            <div class="formcontent">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email*">
+
+                <label for="confirmemail"></label>
+                <input type="email" id="confirmemail" name="confirmemail" placeholder="Confirm email*">
+            </div>
+
+            <div class="formcontent_long">
+                <label for="phonenumber"></label>
+                <input type="tel" id="phonenumber" name="phonenumber" placeholder="Guardian's phone number*">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
